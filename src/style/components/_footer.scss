@@ -9,8 +9,8 @@
   justify-content: space-between;
   
   @media all and (max-width: 1200px) {
-   flex-direction: column;
-   align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .footer__logo {
@@ -31,7 +31,7 @@
   height: adaptiv-prop(50, 40.58);
 
   @media all and (max-width: 1200px) {
-  width: 28.97px;
+    max-width: 28.97px;
   }
 }
 
