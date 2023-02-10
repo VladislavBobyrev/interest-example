@@ -1,0 +1,7 @@
+.page {
+  height: calc(var(--vh) * 100);
+  font-display: swap;
+  font-family: 'Montserrat Alternates';
+  background: $secondary;
+  color: $primary;
+}

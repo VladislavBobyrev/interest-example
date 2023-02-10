@@ -1,0 +1,238 @@
+.banner {
+  padding: 39px 0 89px;
+  position: relative;
+  overflow: hidden;
+
+  @media all and (max-width: 1200px) {
+    padding: 20px 10px 0px 10px;
+  }
+}
+
+.banner__container {
+  @include container-fix;
+}
+
+.banner__logo {
+  display: flex;
+  gap: adaptiv-prop(19.63, 12);
+  margin: auto;
+  max-width: 478px;
+  width: 100%;
+  margin-bottom: adaptiv-prop(36, 9);
+
+  @media all and (max-width: 1200px) {
+    width: fit-content;
+  }
+}
+
+.banner__svg {
+  width: adaptiv-prop(71.37, 44.79);
+  height: adaptiv-prop(99.99, 62.76);
+  min-width: 71.37px;
+
+  @media all and (max-width: 1200px) {
+    min-width: 44.79px;
+  }
+}
+
+.banner__title {
+  max-width: 487px;
+
+  @media all and (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    max-width: initial;
+    width: initial;
+  }
+}
+
+.banner__titlle-top {
+  font-weight: 700;
+  font-size:adaptiv-prop(52.4572 ,32.9229);
+  line-height: 100%;
+}
+
+.banner__titlle-bottom {
+  font-weight: 700;
+  font-size: adaptiv-prop(50, 31.3808);
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+
+.banner__subtitle {
+  font-size: adaptiv-prop(36, 16);
+  line-height: adaptiv-prop(44, 20);
+  text-align: center;
+  max-width:adaptiv-prop(732, 300);
+  margin:0  auto  adaptiv-prop(41, 10) ;
+
+  @media all and (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+.banner__subtitle-top {
+  font-weight: 700;
+}
+
+.banner__subtitle-bottom {
+  font-weight: 500;
+}
+.banner__text{
+  max-width: 670px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 29px;
+  line-height: 35px;
+  margin:0  auto  38px ;
+  @media all and (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.banner__text-accent {
+  font-weight: 700;
+}
+
+.banner__bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.banner__border {
+  position: relative;
+  background: $bg-form;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 488px;
+  margin: auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 10px; 
+    padding: 2px; 
+    background:$brand-gradient; 
+    -webkit-mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude; 
+  }
+}
+
+
+.form {
+  padding: adaptiv-prop(40, 18)  adaptiv-prop(14, 10);
+
+  @media all and (max-width: 1200px) {
+    padding-bottom: 30px;
+  }
+}
+
+.form__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: adaptiv-prop(22, 17);
+}
+
+.form__input {
+  @include button;
+  font-size: 16px;
+  line-height: 20px;
+  background: $primary;
+  display: block;
+  margin: 0 auto 12px;
+
+  &:placeholder{
+    color: $tertiary-800;
+  }
+}
+
+.form__button {
+  @include button;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto adaptiv-prop(21, 7);
+  font-size: 18px;
+  line-height: 20px;
+  color: $primary;
+  background: $brand-gradient;
+}
+
+.form__small {
+  font-size: adaptiv-prop(14, 12);
+  line-height: adaptiv-prop(17,15);
+  text-align: center;
+  margin: 0 auto  adaptiv-prop(17, 7);
+  display: block;
+}
+
+.form__politic{
+  font-style: italic;
+  font-weight: 400;
+  font-size: adaptiv-prop(12, 10);
+  line-height:adaptiv-prop(15, 12);
+  max-width: 380px;
+  text-align: center;
+  margin: auto;
+}
+
+.form__link {
+  text-decoration: underline;
+}
+
+.banner__man-1 {
+  position: absolute;
+  bottom: -20%;
+  left: 0;
+  width: 41%;
+  max-width: 659px;
+
+  @media all and (max-width: 1400px) {
+    width: 38%;
+  }
+  @media all and (max-width: 1200px) {
+    min-width: 184px;
+    bottom: -6%;
+  }
+}
+.banner__man-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 621px;
+  width: 38.8%;
+  bottom: -6%;
+  
+  @media all and (max-width: 1400px) {
+    width: 33%;
+  }
+  @media all and (max-width: 1200px) {
+    position: relative;
+    min-width: 180px;
+    right: -10px;
+    margin: -10% 0 -15px auto;
+    display: block;
+    width: 38.8%;
+  }
+}

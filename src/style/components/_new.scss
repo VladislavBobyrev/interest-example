@@ -1,0 +1,24 @@
+.new { 
+  padding: 10px 0 21px;
+}
+
+.new__title {
+  font-weight: 500;
+  font-size:  adaptiv-prop(24, 16);
+  line-height:  adaptiv-prop(29, 20);
+  text-align: center;
+  margin-bottom: adaptiv-prop(27, 10);
+}
+
+.new__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: adaptiv-prop(12, 6);
+}
+
+.new__image {
+  width: 100%;
+  max-width:adaptiv-prop(190, 96) ;
+  border-radius: 50%;
+}

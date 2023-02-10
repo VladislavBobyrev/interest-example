@@ -1,0 +1,28 @@
+@mixin container-fix {
+  margin: 0 auto;
+  max-width: 880px;
+  width: 100%;
+
+  @media all and (max-width: 1200px) {
+    max-width: 290px;
+  }
+}
+
+@mixin title{
+}
+
+@mixin subtitle {
+}
+
+@mixin button {
+  padding: 13px 0;
+  border-radius: 100px;
+  text-align: center;
+  font-family: 'Montserrat Alternates';
+  border: 0;
+  min-width: 300px;
+
+  @media all and (max-width: 1200px) {
+    min-width: 280px;
+  }
+}
